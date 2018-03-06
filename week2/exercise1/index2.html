@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SocialHackersAcademy, Javascript module 2, Week 2</title>
+  </head>
+  <body>
+    <h2>Exercise 1, Part 2</h2>
+    <p>Repeat a given string (first argument) num times (second
+    argument). Return an empty string if num is not a positive number.</p>
+    <hr>
+    <h3>We solve it using a for loop</h3>
+    <pre>
+    function repeatStringNumTimes(str, num) {
+      // repeat after me
+      if (num > 0) {
+        var repeatStr = str;
+        for (var i = 1; i < num; i++) {
+          str = str + repeatStr;
+        }
+        return str;
+      } else {
+        return "";
+      }
+    }
+
+    repeatStringNumTimes("abc", 3);
+    </pre>
+    <hr>
+    <h3>Now we solve it using a while loop</h3>
+    <pre>
+    function repeatStringNumTimes(str, num) {
+      // repeat after me
+      if (num > 0) {
+        var repeatStr = str;
+        var i = 1;
+        while (i < num) {
+          str = str + repeatStr;
+          i++;
+        }
+        return str;
+      } else {
+        return "";
+      }
+    }
+
+    repeatStringNumTimes("abc", 3);
+    </pre>
+    <hr>
+    <h3>And with a do-while loop</h3>
+    <pre>
+    function repeatStringNumTimes(str, num) {
+      // repeat after me
+      if (num > 0) {
+        var repeatStr = str;
+        var i = 0;
+        str = "";
+        do {
+          str = str + repeatStr;
+          i++;
+        } while (i < num);
+        return str;
+      } else {
+        return "";
+      }
+    }
+    
+    repeatStringNumTimes("abc", 3);
+    </pre>
+  </body>
+</html>
