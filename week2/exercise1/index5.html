@@ -28,6 +28,8 @@
           message = message + arr[i] + ", ";
         } else if (Object.getPrototypeOf(arr[i]) === Array.prototype) {
           message = message + arrayToString(arr[i]) + ", ";
+        } else {
+          message = message + JSON.stringify(arr[i]) + ", ";
         }
       }
       if (typeof arr[arr.length-1] === "undefined") {
@@ -36,11 +38,13 @@
         message = message + arr[arr.length-1] + "]";
       } else if (Object.getPrototypeOf(arr[arr.length-1]) === Array.prototype) {
         message = message + arrayToString(arr[arr.length-1]) + "]";
+      } else {
+        message = message + JSON.stringify(arr[arr.length-1]) + "]";
       }
       return message;
     }
 
-    console.log(arrayToString(arr3d));
+    console.log(arrayToString(arr));
     </pre>
   </body>
 </html>
