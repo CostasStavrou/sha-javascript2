@@ -73,8 +73,36 @@
       the Google for "javaScript pass by value pass by reference"</p>
     </div>
     <div id="exercise2">
-       <h2>Exercise 2</h2>
-       <p>I haven't finished it yet</p>
+      <h2><a a href="./exercise2/index.html">Exercise 2</a></h2>
+      <p>Make a website that fetches (= to get) data asynchronously.</p>
+      <ol>
+        <li>Create a new website with external js file</li>
+        <li>Add a button (e.g. 'click me') that when clicked
+          <span style="font-family:monospace">console.logs</span>
+          'you clicked me!'</li>
+        <li>Create a function that fetches from The
+          <a href="https://developer.github.com/v3/">Github API</a>. For example from
+          [<a href="https://api.github.com/orgs/SocialHackersCodeSchool/repos">this page</a>]
+          (the one we used last week). For help on this check this
+          <a href="https://stackoverflow.com/questions/247483/http-get-request-in-javascript">SO post</a>
+        </li>
+        <li>Display the data that you get from the Github API on your web page.</li>
+        <li>Now link the two together: When you click the button -> get the data
+          from the Github API and display it on your website</li>
+        <li>Make all the repositories link their own page in Github. Use the value
+          of the key: name to make this work (hint: Github urls always look like this
+          <a href="https://api.github.com/repos/SocialHackersCodeSchool/%5BrepositoryName%5D">https://api.github.com/repos/SocialHackersCodeSchool/[repositoryName]</a>
+          where [repositoryName] would be replaced by the actual name of the repository,
+          for example CommandLine). Make sure the link opens in a new tab.</li>
+        <li>BONUS: if you look at this:
+          <pre>https://api.github.com/repos/SocialHackersCodeSchool/CommandLine</pre>
+          You can see CommandLine in the URL. These are called "query parameters" and
+          let us specify in detail what we want from the API. Play around with this.
+          For example you can make two buttons that either get data for a specific
+          repository, JavaScript or Node.js. Or go even more crazy and make users
+          type in a search box 'JavaScript' and then send that to the API by changing
+          the repository.</li>
+      </ol>
     </div>
   </body>
 </html>

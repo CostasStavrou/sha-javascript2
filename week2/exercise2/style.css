@@ -1,0 +1,28 @@
+body {
+  min-width: 25rem;
+}
+
+p.repo {
+  display: inline-block;
+  color: #ffe;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#repos div {
+  margin: 0.5rem 1rem;
+  padding: 0 1rem 1.5rem;
+  border: 2px solid blue;
+  background-color: #ddd;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+#repos img {
+  position: absolute;
+  height: calc(100% - 1rem);
+  top: 0.5rem;
+  right: 1rem;
+}
