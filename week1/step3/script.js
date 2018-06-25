@@ -18,12 +18,12 @@ var body = document.getElementsByTagName("body")[0];
 var buttonClicked = function(e) {
   if (e.target.className === "dark") {
     e.target.className = "light";
-    e.target.innerHTML = "Light theme";
-    body.className = "dark-theme";
-  } else {
-    e.target.className = "dark";
     body.className = "light-theme";
     e.target.innerHTML = "Dark theme";
+  } else {
+    e.target.className = "dark";
+    body.className = "dark-theme";
+    e.target.innerHTML = "Light theme";
   }
 }
 
