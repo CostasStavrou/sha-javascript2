@@ -1,7 +1,7 @@
 ﻿# [SocialHackersAcademy](https://www.socialhackersacademy.org/) - JavaScript 2 module
 
 These are the projects and answers for the next 3 weeks of the JavaScript.
-Look at the [SHA JavaScript-Old repo](https://github.com/SocialHackersCodeSchool/JavaScript-Old/Week4)
+Look at the [SHA JavaScript-Old repo](https://github.com/SocialHackersCodeSchool/JavaScript-Old/blob/master/Week4/MAKEME.md)
 for details.
 
 ## Week 1 of JavaScript module 2
